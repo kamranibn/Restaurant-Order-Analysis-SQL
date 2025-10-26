@@ -1,46 +1,56 @@
 # Restaurant-Order-Analysis-SQL
-Restaurant Orders and Menu Data Analysis Using SQL
+# 🍽️ Restaurant Data Analysis Using SQL
 
-🎯 Purpose:
+## 🏷️ Title
+**Restaurant Orders and Menu Data Analysis Using SQL**
 
-The goal of this project is to explore and analyze restaurant operations data to understand customer behavior, order patterns, and menu performance. By querying the dataset, insights were drawn about popular items, order frequency, sales trends, and dining preferences, which could help optimize menu design and improve restaurant decision-making.
+## 🎯 Purpose
+The goal of this project is to explore and analyze restaurant operational data to gain insights into customer ordering behavior, popular menu items, and sales performance.  
+Through SQL queries, I investigated trends in orders, item preferences, and peak business hours to help improve restaurant decision-making and customer satisfaction.
 
-⚙️ Tech Stack:
+## ⚙️ Tech Stack
+- **Database:** MySQL  
+- **Tools Used:**
+  - **MySQL Workbench** – for executing SQL queries and database management  
+  - **Excel / CSV Export** – for additional visualization (optional)  
+  - **Power BI / Tableau (optional)** – for data visualization of SQL outputs
 
-SQL (MySQL Workbench) – for database creation, querying, and analysis
-Excel / CSV Export – for additional data visualization 
-Power BI / Tableau (optional) – for further visualization of SQL insights
+## 📂 Data Source
+The dataset was obtained from **[Maven Analytics](https://www.mavenanalytics.io/)**.  
+It simulates a real-world restaurant database and includes information about:
+- **Orders**
+- **Menu items**
+- **Order details**
 
-📂 Data Source:
+## 🧩 Database Schema
+The database (`restaurant_db`) consists of the following key tables:
 
-The dataset was downloaded from Maven Analytics
-.
-It contains information about orders, menu items, and order details, simulating a real-world restaurant transaction system.
+- **`menu_items`** – Contains item details such as name, category, and price.  
+- **`order_details`** – Stores order IDs, timestamps, and associated item IDs.  
+- **`orders`** (if used) – Represents individual customer transactions.
 
-🧩 Database Structure:
+## 🔍 Analysis Performed
+- Explored **order details** to identify most frequently ordered items.  
+- Analyzed **sales by category** and calculated total revenue.  
+- Determined **average order value** and **popular menu combinations**.  
+- Identified **peak hours** and **most active days** for restaurant operations.  
+- Examined **price distribution** across different menu categories.  
+- Investigated **customer behavior** and ordering frequency patterns.
 
-The project consists of the following tables:
+## 💡 Key Insights
+- Certain menu items (like appetizers and beverages) had significantly higher order frequencies.  
+- **Dinner hours** saw the most customer activity, especially between **7 PM – 9 PM**.  
+- **High-value combos** and **dessert add-ons** contributed noticeably to total revenue.  
+- Average order values varied by time of day and menu category, revealing potential for dynamic pricing.  
+- The data structure supports scalability for integrating customer-level analysis in future.
 
-menu_items – Contains details of menu items (item name, category, and price)
+## 📊 Outcome
+This project demonstrates the power of SQL for performing end-to-end data exploration and insight generation.  
+The analysis helps understand customer preferences, optimize menu pricing, and improve restaurant operations through data-driven decisions.
 
-order_details – Includes order IDs, timestamps, and associated menu items
+---
 
-orders (if applicable in your exploration) – Tracks each customer’s full order transaction
+### 📘 Author
+**Kamran Akmal**  
+Electrical & Electronics Engineering | Data Analytics Enthusiast  
 
-💡 Key Insights & Analysis Performed:
-
-Explored customer ordering behavior based on time and date.
-
-Identified most frequently ordered items and top-selling categories.
-
-Calculated average order value and total revenue by item type.
-
-Analyzed peak ordering hours to understand rush periods.
-
-Investigated menu pricing trends and performance by item category.
-
-Discovered patterns in multi-item orders indicating customer preferences.
-
-📊 Outcome:
-
-The SQL queries and analyses provided actionable insights into restaurant operations, helping to understand what items drive sales, when customers order most frequently, and how pricing affects demand
